@@ -23,13 +23,19 @@
     <p class="subtitle">MC1 &middot; 1.2 Framing and Refining &middot; Use an approved AI tool to complete a routine task and check the result before using it</p>
   </header>
 
+  <div class="progress" aria-hidden="true">
+    <span class="progress-dot active" data-dot="1"></span>
+    <span class="progress-dot" data-dot="2"></span>
+  </div>
+
+  <div id="page-1" class="page">
+
   <div class="takeaway">
     <span class="label">Practical takeaway</span>
     State your context, role, task and format before you ask an AI for anything. Then use five short follow-up moves&nbsp;&mdash; narrow, expand, change register, challenge and merge&nbsp;&mdash; to fix what is wrong with the first draft, instead of starting over.
   </div>
 
   <section>
-    <p class="section-kicker">Page 1</p>
     <h2>1. Build a request that works the first time</h2>
     <p>A request works when it states four things: context, role, task and format. Leave one out, and the AI has to guess &mdash; and a guess about a date, a penalty, a policy or a safety step is not something to hand to a trainee without checking.</p>
 
@@ -91,8 +97,25 @@
     </div>
   </section>
 
+  <div class="page-nav">
+    <button type="button" class="btn-next" id="next-btn">
+      Next
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </button>
+  </div>
+
+  </div>
+
+  <div id="page-2" class="page" hidden>
+
+  <div class="page-nav page-nav-start">
+    <button type="button" class="btn-back" id="back-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back
+    </button>
+  </div>
+
   <section>
-    <p class="section-kicker">Page 2</p>
     <h2>2. Five moves to refine the draft</h2>
     <p>A first draft is rarely final. Instead of rewriting the whole request, use one of these five moves to fix exactly what is wrong with it.</p>
 
@@ -203,6 +226,8 @@
       <div><span class="k">Language build</span> &nbsp;English (this build only)</div>
     </div>
   </footer>
+
+  </div>
 
 </div>
 <script src="script.js"></script>
