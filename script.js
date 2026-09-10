@@ -20,6 +20,28 @@ document.addEventListener('DOMContentLoaded', function () {
   if (backBtn) backBtn.addEventListener('click', function () { showPage(0); });
 });
 
+// CRTF terms and five-moves accordions: tap a header to reveal its
+// description. Only one item per accordion stays open at a time.
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-accordion]').forEach(function (accordion) {
+    var items = accordion.querySelectorAll('.acc-item');
+    items.forEach(function (item) {
+      var header = item.querySelector('.acc-header');
+      header.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.acc-header').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          header.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  });
+});
+
 // "Check before use" checklist: click an item to mark it considered.
 // Purely visual, in-memory state only — nothing is saved or sent anywhere,
 // so the list resets to unchecked whenever the page is reloaded.
