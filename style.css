@@ -298,19 +298,6 @@ details.compact-details[open] summary::after{content:'\2212';}
 .recap ol{margin:0;padding-left:18px;}
 .recap li{font-size:13px;margin-bottom:6px;}
 .recap li:last-child{margin-bottom:0;}
-.meta-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:4px 16px;
-  font-family:'JetBrains Mono',monospace;
-  font-size:10.5px;
-  color:var(--muted);
-  line-height:1.6;
-}
-@media (max-width:560px){
-  .meta-grid{grid-template-columns:1fr;}
-}
-.meta-grid span.k{color:#8A93B8;}
 .progress{
   display:flex;
   gap:6px;
