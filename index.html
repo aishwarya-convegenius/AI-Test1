@@ -20,7 +20,7 @@
       <span class="badge">Theory</span>
     </div>
     <h1>Framing and the Five Refinement Moves</h1>
-    <p class="subtitle">MC1 &middot; 1.2 Framing and Refining &middot; Use an approved AI tool to complete a routine task and check the result before using it</p>
+    <p class="subtitle">Learn to ask AI clearly, and check its answer before you use it.</p>
   </header>
 
   <div class="progress" aria-hidden="true">
@@ -36,19 +36,19 @@
   <div id="page-1" class="page">
 
     <section>
-      <h2>1. Get it right the first time</h2>
+      <h2>1. Tell AI what you need</h2>
       <ul class="pointer-list">
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          State four things before you ask an AI for anything: <strong>context, role, task, format.</strong>
+          Before you ask AI for help, tell it 4 things.
         </li>
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Skip one, and the AI has to guess &mdash; about a date, a penalty, a policy or a safety step.
+          Miss one, and AI has to guess. A guess can be wrong.
         </li>
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          That's not something to hand to a trainee without checking first.
+          Always check a wrong guess before you use it.
         </li>
       </ul>
 
@@ -73,7 +73,7 @@
           Format
         </div>
       </div>
-      <p class="hint" style="text-align:center;margin-top:2px;">Next page &mdash; see this in action with a real request.</p>
+      <p class="hint" style="text-align:center;margin-top:2px;">Next: see this with a real example.</p>
     </section>
 
     <div class="page-nav">
@@ -96,38 +96,44 @@
     </div>
 
     <section>
-      <h2>2. Weak vs usable request</h2>
-      <p>Same task, two ways of asking. Compare them, then try writing your own below.</p>
+      <h2>2. Try two prompts</h2>
+      <p>Same job, two different asks. See the difference.</p>
 
       <div class="example-grid">
         <div class="example-card weak">
           <div class="example-tag weak-tag">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-            Weak request
+            Prompt 1 &mdash; weak
           </div>
           <p>&ldquo;Write about lathe safety.&rdquo;</p>
         </div>
         <div class="example-card usable">
           <div class="example-tag usable-tag">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Usable request
+            Prompt 2 &mdash; usable
           </div>
-          <p>&ldquo;You are a workshop facilitator. Write a 100-word safety reminder for first-year ITI trainees, to read out before the lathe machine practical. Format it as three short points for the noticeboard.&rdquo;</p>
+          <p>&ldquo;You are a teacher. Write a short safety notice for new students, before they use the lathe machine. Make it 3 short points for the notice board.&rdquo;</p>
         </div>
       </div>
 
       <div class="practice-box">
-        <p class="practice-label">Your turn &mdash; try it with an approved AI tool</p>
+        <p class="practice-label">Try it yourself</p>
+        <p>Open your AI tool. Try both prompts above. Paste each answer below.</p>
 
-        <label for="own-request">Write your own request <span class="opt">(state context, role, task, format)</span></label>
-        <textarea id="own-request" rows="3" placeholder="e.g. You are a ... Write a ... for ... Format it as ..." data-counter="own-request-count"></textarea>
-        <div class="char-count" id="own-request-count">0 characters</div>
+        <label for="out-1">Answer from Prompt 1</label>
+        <textarea id="out-1" rows="3" placeholder="Paste the AI's answer here"></textarea>
 
-        <label for="own-output">Paste what the AI gave you back</label>
-        <textarea id="own-output" rows="3" placeholder="Paste the AI's response here" data-counter="own-output-count"></textarea>
-        <div class="char-count" id="own-output-count">0 characters</div>
+        <label for="out-2">Answer from Prompt 2</label>
+        <textarea id="out-2" rows="3" placeholder="Paste the AI's answer here"></textarea>
 
-        <p class="hint" style="margin:6px 0 0;">You'll check this against the checklist on the last page.</p>
+        <p class="mcq-question">Which answer do you like more?</p>
+        <div class="mcq-group">
+          <div class="mcq-options">
+            <button type="button" class="mcq-option" data-feedback="Prompt 1's answer is often too general &mdash; the AI had to guess who it's for.">Prompt 1</button>
+            <button type="button" class="mcq-option" data-feedback="Prompt 2 usually works better &mdash; it tells the AI who it's for, what to write, and how it should look.">Prompt 2</button>
+          </div>
+          <p class="mcq-feedback" hidden></p>
+        </div>
       </div>
     </section>
 
@@ -151,8 +157,8 @@
     </div>
 
     <section>
-      <h2>3. The four elements</h2>
-      <p class="hint">Tap each term to see what it means.</p>
+      <h2>3. What each word means</h2>
+      <p class="hint">Tap to see what it means.</p>
       <div class="accordion" data-accordion>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
@@ -162,7 +168,7 @@
             </span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
-          <div class="acc-body"><div class="acc-body-inner"><p>What is this for, and who will read or use it?</p></div></div>
+          <div class="acc-body"><div class="acc-body-inner"><p>Why you need this, and who will read it.</p></div></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
@@ -172,7 +178,7 @@
             </span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
-          <div class="acc-body"><div class="acc-body-inner"><p>Who should the AI write as &mdash; a facilitator, a class representative, a shift supervisor?</p></div></div>
+          <div class="acc-body"><div class="acc-body-inner"><p>Who the AI should act like &mdash; a teacher, a class leader, a supervisor.</p></div></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
@@ -182,7 +188,7 @@
             </span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
-          <div class="acc-body"><div class="acc-body-inner"><p>What should it actually produce &mdash; a reminder, a notice, a summary?</p></div></div>
+          <div class="acc-body"><div class="acc-body-inner"><p>What you want the AI to make.</p></div></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
@@ -192,7 +198,7 @@
             </span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
-          <div class="acc-body"><div class="acc-body-inner"><p>How should the output look &mdash; a noticeboard point, an email, a table?</p></div></div>
+          <div class="acc-body"><div class="acc-body-inner"><p>How it should look when it's done.</p></div></div>
         </div>
       </div>
     </section>
@@ -217,85 +223,76 @@
     </div>
 
     <section>
-      <h2>4. Five moves to refine the draft</h2>
-      <ul class="pointer-list">
-        <li>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          A first draft is rarely final.
-        </li>
-        <li>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Use one of these five moves to fix exactly what's wrong, instead of rewriting from scratch.
-        </li>
-      </ul>
+      <h2>4. 5 ways to fix an answer</h2>
+      <p>The first answer is not always right. Use one of these 5 tricks to fix it.</p>
 
       <div class="flow">
         <div class="flow-step">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-          Draft
+          Answer
         </div>
         <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         <div class="flow-step accent">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
-          Pick a move
+          Pick a trick
         </div>
         <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         <div class="flow-step">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-          Refined draft
+          Better answer
         </div>
       </div>
 
-      <p class="hint">Tap a move to see when to use it.</p>
+      <p class="hint">Tap to learn each one.</p>
       <div class="accordion" data-accordion>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">1</span> Narrow</span>
+            <span class="acc-title"><span class="acc-num">1</span> Make it smaller</span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <p>Fixes an answer that tries to cover too much.</p>
-            <span class="trigger">&ldquo;Focus only on this part.&rdquo;</span>
+            <p>Answer covers too much? Ask for just one part.</p>
+            <span class="trigger">&ldquo;Only tell me about ___.&rdquo;</span>
           </div></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">2</span> Expand</span>
+            <span class="acc-title"><span class="acc-num">2</span> Add more</span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <p>Fixes an answer that skips detail you need.</p>
-            <span class="trigger">&ldquo;Add more detail on this part.&rdquo;</span>
+            <p>Answer too short? Ask for more detail.</p>
+            <span class="trigger">&ldquo;Tell me more about ___.&rdquo;</span>
           </div></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">3</span> Change register</span>
+            <span class="acc-title"><span class="acc-num">3</span> Change the tone</span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <p>Fixes a tone or reading level that does not suit the audience.</p>
-            <span class="trigger">&ldquo;Rewrite this for [audience].&rdquo;</span>
+            <p>Words too hard, or too simple? Ask AI to change how it sounds.</p>
+            <span class="trigger">&ldquo;Say this in a simple way for ___.&rdquo;</span>
           </div></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">4</span> Challenge</span>
+            <span class="acc-title"><span class="acc-num">4</span> Check it</span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <p>Fixes a claim that sounds confident but is unverified.</p>
-            <span class="trigger">&ldquo;What could be wrong here, and what have you assumed?&rdquo;</span>
+            <p>Answer sounds sure, but might be wrong? Ask AI to check itself.</p>
+            <span class="trigger">&ldquo;What might be wrong here?&rdquo;</span>
           </div></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">5</span> Merge</span>
+            <span class="acc-title"><span class="acc-num">5</span> Combine</span>
             <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <p>Fixes strong points scattered across two drafts.</p>
-            <span class="trigger">&ldquo;Combine the best of this draft and the earlier one.&rdquo;</span>
+            <p>Got 2 good answers? Ask AI to combine the best parts.</p>
+            <span class="trigger">&ldquo;Combine the best parts of both.&rdquo;</span>
           </div></div>
         </div>
       </div>
@@ -303,8 +300,8 @@
       <div class="stop-rule">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A6B00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
         <div>
-          <span class="label">Stop rule</span>
-          <p>Stop refining once fixing it yourself &mdash; a date, a name, a line of formatting &mdash; is faster or safer than sending another request.</p>
+          <span class="label">When to stop</span>
+          <p>If fixing it yourself is faster than asking again &mdash; just fix it.</p>
         </div>
       </div>
     </section>
@@ -331,19 +328,24 @@
     <section>
       <h2>5. Practice</h2>
       <div class="callout">
-        <p style="margin:0;">You are a class representative. A group assignment is due Friday (a fictional date, for practice). Write one message to your study group stating context, role, task and format together. Then ask the AI to <strong>narrow</strong> the message to a short chat length, and <strong>challenge</strong> it to flag any date or instruction it added on its own.</p>
+        <p style="margin:0;">Pretend: you are the class leader. Your group has homework due Friday (just for practice). Write one message. Tell the AI all 4 things &mdash; context, role, task, format.</p>
       </div>
 
       <div class="practice-box">
         <p class="practice-label">Your turn</p>
 
-        <label for="practice-message">Your message to the study group</label>
-        <textarea id="practice-message" rows="3" placeholder="State context, role, task and format in one message" data-counter="practice-message-count"></textarea>
-        <div class="char-count" id="practice-message-count">0 characters</div>
+        <label for="practice-message">Your message</label>
+        <textarea id="practice-message" rows="3" placeholder="You are ... Write ... for ... Format it as ..."></textarea>
 
-        <label for="practice-followup">After you asked the AI to narrow it and challenge itself, what changed?</label>
-        <textarea id="practice-followup" rows="3" placeholder="Note what the AI shortened, and what it admitted to assuming" data-counter="practice-followup-count"></textarea>
-        <div class="char-count" id="practice-followup-count">0 characters</div>
+        <p class="hint" style="margin:8px 0 0;">Now ask the AI: &ldquo;What might you be wrong about?&rdquo;</p>
+        <p class="mcq-question">Did it find something it wasn't sure about?</p>
+        <div class="mcq-group">
+          <div class="mcq-options">
+            <button type="button" class="mcq-option" data-feedback="That's exactly why we check. Always confirm anything the AI wasn't sure about.">Yes</button>
+            <button type="button" class="mcq-option" data-feedback="That's fine too &mdash; keep checking anyway. AI can be wrong without saying so.">No</button>
+          </div>
+          <p class="mcq-feedback" hidden></p>
+        </div>
       </div>
     </section>
 
@@ -367,36 +369,36 @@
     </div>
 
     <section>
-      <h2>6. Check before use</h2>
+      <h2>6. Check before you use it</h2>
       <ul class="checklist">
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Did the AI add a date, number, policy or safety step you did not give it? Confirm it before use.
+          Did AI add a date, number or rule you did not ask for? Check it.
         </li>
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Does the format match what will actually be printed, posted or sent?
+          Does it look like what you need &mdash; a notice, an email, a table?
         </li>
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Would someone outside this conversation understand it without help?
+          Can someone else understand it, with no extra help?
         </li>
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Is every name, figure and document in the example fictional or already verified?
+          Are all names and numbers in the example made up, not real?
         </li>
       </ul>
     </section>
 
     <section style="margin-bottom:8px;">
       <div class="recap">
-        <h2 style="margin-bottom:8px;">Five-line recap</h2>
+        <h2 style="margin-bottom:8px;">Quick recap</h2>
         <ol>
-          <li>State context, role, task and format before you ask.</li>
-          <li>Narrow a draft that is too broad; expand one that is too thin.</li>
-          <li>Change register for the wrong tone, and challenge a claim you cannot verify.</li>
-          <li>Merge the strongest parts when good material is split across drafts.</li>
-          <li>Stop refining once a manual fix is faster &mdash; and check before you use it.</li>
+          <li>Tell AI 4 things before you ask.</li>
+          <li>Too much? Ask for less. Too little? Ask for more.</li>
+          <li>Wrong tone? Ask AI to change it. Not sure? Ask AI to check itself.</li>
+          <li>Two good answers? Combine them.</li>
+          <li>Faster to fix it yourself? Stop &mdash; and always check before you use it.</li>
         </ol>
       </div>
     </section>

@@ -43,16 +43,21 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// "Your turn" practice boxes: live character count as the learner types.
-// Purely visual, in-memory state only — nothing is saved or sent anywhere,
-// so drafts reset whenever the page is reloaded.
+// Quick MCQs: tap an option to select it and reveal one line of feedback.
+// Purely visual, in-memory state only — nothing is saved or sent anywhere.
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('textarea[data-counter]').forEach(function (textarea) {
-    var counter = document.getElementById(textarea.getAttribute('data-counter'));
-    if (!counter) return;
-    textarea.addEventListener('input', function () {
-      var n = textarea.value.length;
-      counter.textContent = n + (n === 1 ? ' character' : ' characters');
+  document.querySelectorAll('.mcq-group').forEach(function (group) {
+    var options = group.querySelectorAll('.mcq-option');
+    var feedback = group.querySelector('.mcq-feedback');
+    options.forEach(function (option) {
+      option.addEventListener('click', function () {
+        options.forEach(function (o) { o.classList.remove('selected'); });
+        option.classList.add('selected');
+        if (feedback) {
+          feedback.textContent = option.getAttribute('data-feedback') || '';
+          feedback.hidden = false;
+        }
+      });
     });
   });
 });
