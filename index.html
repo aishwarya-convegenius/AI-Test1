@@ -26,209 +26,387 @@
   <div class="progress" aria-hidden="true">
     <span class="progress-dot active" data-dot="1"></span>
     <span class="progress-dot" data-dot="2"></span>
+    <span class="progress-dot" data-dot="3"></span>
+    <span class="progress-dot" data-dot="4"></span>
+    <span class="progress-dot" data-dot="5"></span>
+    <span class="progress-dot" data-dot="6"></span>
   </div>
 
+  <!-- PAGE 1 — CRTF overview -->
   <div id="page-1" class="page">
 
-  <div class="takeaway">
-    <span class="label">Practical takeaway</span>
-    State your context, role, task and format before you ask an AI for anything. Then use five short follow-up moves&nbsp;&mdash; narrow, expand, change register, challenge and merge&nbsp;&mdash; to fix what is wrong with the first draft, instead of starting over.
-  </div>
+    <section>
+      <h2>1. Get it right the first time</h2>
+      <ul class="pointer-list">
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          State four things before you ask an AI for anything: <strong>context, role, task, format.</strong>
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Skip one, and the AI has to guess &mdash; about a date, a penalty, a policy or a safety step.
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          That's not something to hand to a trainee without checking first.
+        </li>
+      </ul>
 
-  <section>
-    <h2>1. Build a request that works the first time</h2>
-    <p>A request works when it states four things: context, role, task and format. Leave one out, and the AI has to guess &mdash; and a guess about a date, a penalty, a policy or a safety step is not something to hand to a trainee without checking.</p>
+      <div class="flow">
+        <div class="flow-step">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          Context
+        </div>
+        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        <div class="flow-step">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg>
+          Role
+        </div>
+        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        <div class="flow-step">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          Task
+        </div>
+        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        <div class="flow-step">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Format
+        </div>
+      </div>
+      <p class="hint" style="text-align:center;margin-top:2px;">Next page &mdash; see this in action with a real request.</p>
+    </section>
 
-    <div class="example-grid">
-      <div class="example-card weak">
-        <div class="example-tag weak-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          Weak request
-        </div>
-        <p>&ldquo;Write about lathe safety.&rdquo;</p>
-      </div>
-      <div class="example-card usable">
-        <div class="example-tag usable-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Usable request
-        </div>
-        <p>&ldquo;You are a workshop facilitator. Write a 100-word safety reminder for first-year ITI trainees, to read out before the lathe machine practical. Format it as three short points for the noticeboard.&rdquo;</p>
-      </div>
+    <div class="page-nav">
+      <button type="button" class="btn-next" data-target="1">
+        Next
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
     </div>
 
-    <p class="hint">Tap each term to see what it means.</p>
-    <div class="accordion" data-accordion>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-            Context
-          </span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner"><p>What is this for, and who will read or use it?</p></div></div>
-      </div>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg>
-            Role
-          </span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner"><p>Who should the AI write as &mdash; a facilitator, a class representative, a shift supervisor?</p></div></div>
-      </div>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-            Task
-          </span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner"><p>What should it actually produce &mdash; a reminder, a notice, a summary?</p></div></div>
-      </div>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            Format
-          </span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner"><p>How should the output look &mdash; a noticeboard point, an email, a table?</p></div></div>
-      </div>
-    </div>
-
-  </section>
-
-  <div class="page-nav">
-    <button type="button" class="btn-next" id="next-btn">
-      Next
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-    </button>
   </div>
 
-  </div>
-
+  <!-- PAGE 2 — weak vs usable request + try it yourself -->
   <div id="page-2" class="page" hidden>
 
-  <div class="page-nav page-nav-start">
-    <button type="button" class="btn-back" id="back-btn">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-      Back
-    </button>
+    <div class="page-nav page-nav-start">
+      <button type="button" class="btn-back" data-target="0">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back
+      </button>
+    </div>
+
+    <section>
+      <h2>2. Weak vs usable request</h2>
+      <p>Same task, two ways of asking. Compare them, then try writing your own below.</p>
+
+      <div class="example-grid">
+        <div class="example-card weak">
+          <div class="example-tag weak-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Weak request
+          </div>
+          <p>&ldquo;Write about lathe safety.&rdquo;</p>
+        </div>
+        <div class="example-card usable">
+          <div class="example-tag usable-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Usable request
+          </div>
+          <p>&ldquo;You are a workshop facilitator. Write a 100-word safety reminder for first-year ITI trainees, to read out before the lathe machine practical. Format it as three short points for the noticeboard.&rdquo;</p>
+        </div>
+      </div>
+
+      <div class="practice-box">
+        <p class="practice-label">Your turn &mdash; try it with an approved AI tool</p>
+
+        <label for="own-request">Write your own request <span class="opt">(state context, role, task, format)</span></label>
+        <textarea id="own-request" rows="3" placeholder="e.g. You are a ... Write a ... for ... Format it as ..." data-counter="own-request-count"></textarea>
+        <div class="char-count" id="own-request-count">0 characters</div>
+
+        <label for="own-output">Paste what the AI gave you back</label>
+        <textarea id="own-output" rows="3" placeholder="Paste the AI's response here" data-counter="own-output-count"></textarea>
+        <div class="char-count" id="own-output-count">0 characters</div>
+
+        <p class="hint" style="margin:6px 0 0;">You'll check this against the checklist on the last page.</p>
+      </div>
+    </section>
+
+    <div class="page-nav">
+      <button type="button" class="btn-next" data-target="2">
+        Next
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+
   </div>
 
-  <section>
-    <h2>2. Five moves to refine the draft</h2>
-    <p>A first draft is rarely final. Instead of rewriting the whole request, use one of these five moves to fix exactly what is wrong with it.</p>
+  <!-- PAGE 3 — the four elements (accordion) -->
+  <div id="page-3" class="page" hidden>
 
-    <p class="hint">Tap a move to see when to use it.</p>
-    <div class="accordion" data-accordion>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title"><span class="acc-num">1</span> Narrow</span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner">
-          <p>Fixes an answer that tries to cover too much.</p>
-          <span class="trigger">&ldquo;Focus only on this part.&rdquo;</span>
-        </div></div>
-      </div>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title"><span class="acc-num">2</span> Expand</span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner">
-          <p>Fixes an answer that skips detail you need.</p>
-          <span class="trigger">&ldquo;Add more detail on this part.&rdquo;</span>
-        </div></div>
-      </div>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title"><span class="acc-num">3</span> Change register</span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner">
-          <p>Fixes a tone or reading level that does not suit the audience.</p>
-          <span class="trigger">&ldquo;Rewrite this for [audience].&rdquo;</span>
-        </div></div>
-      </div>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title"><span class="acc-num">4</span> Challenge</span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner">
-          <p>Fixes a claim that sounds confident but is unverified.</p>
-          <span class="trigger">&ldquo;What could be wrong here, and what have you assumed?&rdquo;</span>
-        </div></div>
-      </div>
-      <div class="acc-item">
-        <button type="button" class="acc-header" aria-expanded="false">
-          <span class="acc-title"><span class="acc-num">5</span> Merge</span>
-          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="acc-body"><div class="acc-body-inner">
-          <p>Fixes strong points scattered across two drafts.</p>
-          <span class="trigger">&ldquo;Combine the best of this draft and the earlier one.&rdquo;</span>
-        </div></div>
-      </div>
+    <div class="page-nav page-nav-start">
+      <button type="button" class="btn-back" data-target="1">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back
+      </button>
     </div>
 
-    <div class="stop-rule">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A6B00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-      <div>
-        <span class="label">Stop rule</span>
-        <p>Stop refining once fixing it yourself &mdash; a date, a name, a line of formatting &mdash; is faster or safer than sending another request. Refining is a tool, not a target.</p>
+    <section>
+      <h2>3. The four elements</h2>
+      <p class="hint">Tap each term to see what it means.</p>
+      <div class="accordion" data-accordion>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Context
+            </span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner"><p>What is this for, and who will read or use it?</p></div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg>
+              Role
+            </span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner"><p>Who should the AI write as &mdash; a facilitator, a class representative, a shift supervisor?</p></div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+              Task
+            </span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner"><p>What should it actually produce &mdash; a reminder, a notice, a summary?</p></div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Format
+            </span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner"><p>How should the output look &mdash; a noticeboard point, an email, a table?</p></div></div>
+        </div>
       </div>
+    </section>
+
+    <div class="page-nav">
+      <button type="button" class="btn-next" data-target="3">
+        Next
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
     </div>
-  </section>
 
-  <section>
-    <p class="section-kicker">Practice</p>
-    <div class="callout">
-      <h2 style="margin-bottom:10px;">Try this</h2>
-      <p>You are a class representative. A group assignment is due Friday (a fictional date, for practice). Write one message to your study group stating context, role, task and format together. Then ask the AI to narrow the message to a short chat length, and challenge it to flag any date or instruction it added on its own.</p>
+  </div>
+
+  <!-- PAGE 4 — five refinement moves -->
+  <div id="page-4" class="page" hidden>
+
+    <div class="page-nav page-nav-start">
+      <button type="button" class="btn-back" data-target="2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back
+      </button>
     </div>
-  </section>
 
-  <section>
-    <h2>Check before use</h2>
-    <ul class="checklist">
-      <li>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        Did the AI add a date, number, policy or safety step you did not give it? Confirm it before use.
-      </li>
-      <li>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        Does the format match what will actually be printed, posted or sent?
-      </li>
-      <li>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        Would someone outside this conversation understand it without help?
-      </li>
-      <li>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        Is every name, figure and document in the example fictional or already verified?
-      </li>
-    </ul>
-  </section>
+    <section>
+      <h2>4. Five moves to refine the draft</h2>
+      <ul class="pointer-list">
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          A first draft is rarely final.
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Use one of these five moves to fix exactly what's wrong, instead of rewriting from scratch.
+        </li>
+      </ul>
 
-  <section style="margin-bottom:8px;">
-    <details class="compact-details recap">
-      <summary>Five-line recap</summary>
-      <ol>
-        <li>State context, role, task and format before you ask.</li>
-        <li>Narrow a draft that is too broad; expand one that is too thin.</li>
-        <li>Change register for the wrong tone, and challenge a claim you cannot verify.</li>
-        <li>Merge the strongest parts when good material is split across drafts.</li>
-        <li>Stop refining once a manual fix is faster &mdash; and check before you use it.</li>
-      </ol>
-    </details>
-  </section>
+      <div class="flow">
+        <div class="flow-step">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          Draft
+        </div>
+        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        <div class="flow-step accent">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
+          Pick a move
+        </div>
+        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        <div class="flow-step">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          Refined draft
+        </div>
+      </div>
+
+      <p class="hint">Tap a move to see when to use it.</p>
+      <div class="accordion" data-accordion>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title"><span class="acc-num">1</span> Narrow</span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner">
+            <p>Fixes an answer that tries to cover too much.</p>
+            <span class="trigger">&ldquo;Focus only on this part.&rdquo;</span>
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title"><span class="acc-num">2</span> Expand</span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner">
+            <p>Fixes an answer that skips detail you need.</p>
+            <span class="trigger">&ldquo;Add more detail on this part.&rdquo;</span>
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title"><span class="acc-num">3</span> Change register</span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner">
+            <p>Fixes a tone or reading level that does not suit the audience.</p>
+            <span class="trigger">&ldquo;Rewrite this for [audience].&rdquo;</span>
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title"><span class="acc-num">4</span> Challenge</span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner">
+            <p>Fixes a claim that sounds confident but is unverified.</p>
+            <span class="trigger">&ldquo;What could be wrong here, and what have you assumed?&rdquo;</span>
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <span class="acc-title"><span class="acc-num">5</span> Merge</span>
+            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner">
+            <p>Fixes strong points scattered across two drafts.</p>
+            <span class="trigger">&ldquo;Combine the best of this draft and the earlier one.&rdquo;</span>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="stop-rule">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A6B00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+        <div>
+          <span class="label">Stop rule</span>
+          <p>Stop refining once fixing it yourself &mdash; a date, a name, a line of formatting &mdash; is faster or safer than sending another request.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-nav">
+      <button type="button" class="btn-next" data-target="4">
+        Next
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- PAGE 5 — practice -->
+  <div id="page-5" class="page" hidden>
+
+    <div class="page-nav page-nav-start">
+      <button type="button" class="btn-back" data-target="3">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back
+      </button>
+    </div>
+
+    <section>
+      <h2>5. Practice</h2>
+      <div class="callout">
+        <p style="margin:0;">You are a class representative. A group assignment is due Friday (a fictional date, for practice). Write one message to your study group stating context, role, task and format together. Then ask the AI to <strong>narrow</strong> the message to a short chat length, and <strong>challenge</strong> it to flag any date or instruction it added on its own.</p>
+      </div>
+
+      <div class="practice-box">
+        <p class="practice-label">Your turn</p>
+
+        <label for="practice-message">Your message to the study group</label>
+        <textarea id="practice-message" rows="3" placeholder="State context, role, task and format in one message" data-counter="practice-message-count"></textarea>
+        <div class="char-count" id="practice-message-count">0 characters</div>
+
+        <label for="practice-followup">After you asked the AI to narrow it and challenge itself, what changed?</label>
+        <textarea id="practice-followup" rows="3" placeholder="Note what the AI shortened, and what it admitted to assuming" data-counter="practice-followup-count"></textarea>
+        <div class="char-count" id="practice-followup-count">0 characters</div>
+      </div>
+    </section>
+
+    <div class="page-nav">
+      <button type="button" class="btn-next" data-target="5">
+        Next
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- PAGE 6 — check before use + recap -->
+  <div id="page-6" class="page" hidden>
+
+    <div class="page-nav page-nav-start">
+      <button type="button" class="btn-back" data-target="4">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back
+      </button>
+    </div>
+
+    <section>
+      <h2>6. Check before use</h2>
+      <ul class="checklist">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Did the AI add a date, number, policy or safety step you did not give it? Confirm it before use.
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Does the format match what will actually be printed, posted or sent?
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Would someone outside this conversation understand it without help?
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Is every name, figure and document in the example fictional or already verified?
+        </li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom:8px;">
+      <div class="recap">
+        <h2 style="margin-bottom:8px;">Five-line recap</h2>
+        <ol>
+          <li>State context, role, task and format before you ask.</li>
+          <li>Narrow a draft that is too broad; expand one that is too thin.</li>
+          <li>Change register for the wrong tone, and challenge a claim you cannot verify.</li>
+          <li>Merge the strongest parts when good material is split across drafts.</li>
+          <li>Stop refining once a manual fix is faster &mdash; and check before you use it.</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="page-nav">
+      <button type="button" class="btn-back" data-target="0">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
+        Start over
+      </button>
+    </div>
 
   </div>
 

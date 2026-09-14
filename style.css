@@ -61,44 +61,16 @@ h1{
   font-size:13.5px;
   margin:0;
 }
-.takeaway{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-left:4px solid var(--accent);
-  border-radius:14px;
-  padding:13px 16px;
-  margin-bottom:18px;
-  font-size:14.5px;
-  font-weight:500;
-}
-.takeaway .label{
-  display:block;
-  font-family:'JetBrains Mono',monospace;
-  font-size:10.5px;
-  font-weight:600;
-  letter-spacing:0.06em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:6px;
-}
-section{margin-bottom:18px;}
+section{margin-bottom:16px;}
 h2{
   font-size:17.5px;
-  margin:0 0 4px;
+  margin:0 0 8px;
   font-weight:700;
 }
 .hint{
   margin:0 0 10px;
   font-size:12.5px;
   color:var(--muted);
-}
-.section-kicker{
-  font-family:'JetBrains Mono',monospace;
-  font-size:11px;
-  color:var(--muted);
-  letter-spacing:0.06em;
-  text-transform:uppercase;
-  margin:0 0 6px;
 }
 p{margin:0 0 10px;font-size:14px;}
 .card{
@@ -107,11 +79,61 @@ p{margin:0 0 10px;font-size:14px;}
   border-radius:14px;
   padding:14px 16px;
 }
+
+/* Bulleted pointers — used instead of dense paragraphs */
+.pointer-list{
+  list-style:none;
+  margin:0 0 12px;
+  padding:0;
+  display:grid;
+  gap:7px;
+}
+.pointer-list li{
+  display:flex;
+  gap:8px;
+  align-items:flex-start;
+  font-size:13.5px;
+  color:var(--text);
+}
+.pointer-list li svg{flex:none;margin-top:2px;color:var(--accent);}
+
+/* Horizontal step / flow diagram */
+.flow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  margin:14px 0 6px;
+}
+.flow-step{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:10px 14px;
+  font-size:12px;
+  font-weight:600;
+  min-width:64px;
+  text-align:center;
+  color:var(--text);
+}
+.flow-step svg{color:var(--accent);}
+.flow-step.accent{
+  background:#F0F3FF;
+  border-color:#CBD5FF;
+  color:var(--accent);
+}
+.flow-arrow{flex:none;color:var(--border);}
+
 .example-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:10px;
-  margin:10px 0 12px;
+  margin:10px 0 14px;
 }
 @media (max-width:560px){
   .example-grid{grid-template-columns:1fr;}
@@ -137,6 +159,47 @@ p{margin:0 0 10px;font-size:14px;}
 .example-tag.weak-tag{color:#8A93B8;}
 .example-tag.usable-tag{color:var(--accent);}
 .example-card p{margin:0;font-size:13px;}
+
+/* "Your turn" interactive practice boxes */
+.practice-box{
+  border:1px solid #CBD5FF;
+  border-radius:14px;
+  padding:14px 16px;
+  background:#F8F9FF;
+  margin-top:4px;
+}
+.practice-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 10px;
+}
+.practice-box label{
+  display:block;
+  font-weight:600;
+  font-size:13px;
+  margin-bottom:5px;
+}
+.practice-box label .opt{font-weight:400;color:var(--muted);}
+.practice-box textarea{
+  width:100%;
+  min-height:64px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:8px 10px;
+  font-family:'Rubik',sans-serif;
+  font-size:13px;
+  color:var(--text);
+  resize:vertical;
+  background:var(--surface);
+}
+.practice-box textarea:focus{outline:none;border-color:var(--accent);}
+.practice-box textarea + .char-count{margin-bottom:12px;}
+.practice-box label:not(:first-child){margin-top:2px;}
+.char-count{font-size:11px;color:var(--muted);text-align:right;margin-top:3px;}
 
 /* Interactive accordion — used for the CRTF terms and the five moves */
 .accordion{
@@ -218,6 +281,7 @@ p{margin:0 0 10px;font-size:14px;}
   display:flex;
   gap:10px;
   align-items:flex-start;
+  margin-top:12px;
 }
 .stop-rule svg{flex:none;margin-top:2px;}
 .stop-rule p{margin:0;font-size:13px;}
@@ -236,8 +300,9 @@ p{margin:0 0 10px;font-size:14px;}
   border-radius:14px;
   padding:14px 16px;
   background:var(--surface);
+  margin-bottom:12px;
 }
-.callout p{margin:0;font-size:13.5px;}
+.callout p{font-size:13.5px;}
 .checklist{
   list-style:none;
   margin:10px 0 0;
@@ -267,34 +332,12 @@ p{margin:0 0 10px;font-size:14px;}
 }
 .checklist li.done svg{stroke:var(--accent);}
 .checklist svg{flex:none;margin-top:2px;}
-
-/* Collapsible native <details> — used for the recap and the footer meta */
-details.compact-details{
+.recap{
+  background:var(--surface);
   border:1px solid var(--border);
   border-radius:14px;
-  background:var(--surface);
-  padding:12px 16px;
+  padding:14px 16px;
 }
-details.compact-details + details.compact-details{margin-top:10px;}
-details.compact-details summary{
-  cursor:pointer;
-  font-weight:700;
-  font-size:14.5px;
-  list-style:none;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-details.compact-details summary::-webkit-details-marker{display:none;}
-details.compact-details summary::after{
-  content:'+';
-  font-size:17px;
-  font-weight:400;
-  color:var(--accent);
-  line-height:1;
-}
-details.compact-details[open] summary{margin-bottom:8px;}
-details.compact-details[open] summary::after{content:'\2212';}
 .recap ol{margin:0;padding-left:18px;}
 .recap li{font-size:13px;margin-bottom:6px;}
 .recap li:last-child{margin-bottom:0;}
@@ -305,7 +348,7 @@ details.compact-details[open] summary::after{content:'\2212';}
   margin-bottom:16px;
 }
 .progress-dot{
-  width:22px;
+  width:18px;
   height:4px;
   border-radius:999px;
   background:var(--border);

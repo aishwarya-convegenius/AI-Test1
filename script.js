@@ -1,10 +1,8 @@
-// Two-screen pagination: Next/Back swap which .page is visible and
-// update the progress dots. Purely visual, in-memory state only.
+// Six-screen pagination: any button with data-target swaps which .page is
+// visible and updates the progress dots. Purely visual, in-memory state only.
 document.addEventListener('DOMContentLoaded', function () {
   var pages = document.querySelectorAll('.page');
   var dots = document.querySelectorAll('.progress-dot');
-  var nextBtn = document.getElementById('next-btn');
-  var backBtn = document.getElementById('back-btn');
 
   function showPage(index) {
     pages.forEach(function (page, i) {
@@ -16,8 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  if (nextBtn) nextBtn.addEventListener('click', function () { showPage(1); });
-  if (backBtn) backBtn.addEventListener('click', function () { showPage(0); });
+  document.querySelectorAll('[data-target]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      showPage(parseInt(btn.getAttribute('data-target'), 10));
+    });
+  });
 });
 
 // CRTF terms and five-moves accordions: tap a header to reveal its
@@ -38,6 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
           header.setAttribute('aria-expanded', 'true');
         }
       });
+    });
+  });
+});
+
+// "Your turn" practice boxes: live character count as the learner types.
+// Purely visual, in-memory state only — nothing is saved or sent anywhere,
+// so drafts reset whenever the page is reloaded.
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('textarea[data-counter]').forEach(function (textarea) {
+    var counter = document.getElementById(textarea.getAttribute('data-counter'));
+    if (!counter) return;
+    textarea.addEventListener('input', function () {
+      var n = textarea.value.length;
+      counter.textContent = n + (n === 1 ? ' character' : ' characters');
     });
   });
 });
