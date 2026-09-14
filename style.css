@@ -129,6 +129,35 @@ p{margin:0 0 10px;font-size:14px;}
 }
 .flow-arrow{flex:none;color:var(--border);}
 
+/* Static list of terms — a plain, non-collapsing alternative to the accordion */
+.term-list{
+  display:grid;
+  gap:8px;
+  margin:10px 0 12px;
+}
+.term-row{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:10px 12px;
+  background:var(--surface);
+  font-size:13.5px;
+}
+.term-icon{
+  flex:none;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:#F0F3FF;
+  color:var(--accent);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.term-row strong{color:var(--text);}
+
 .example-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -371,15 +400,66 @@ p{margin:0 0 10px;font-size:14px;}
 }
 .checklist li.done svg{stroke:var(--accent);}
 .checklist svg{flex:none;margin-top:2px;}
-.recap{
+/* Quick-recap mind map — hub + 5 nodes, in the page's own blue/white palette */
+.recap-map{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+}
+.recap-hub{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:4px solid var(--accent);
+  border-radius:999px;
+  padding:9px 20px;
+  font-weight:700;
+  font-size:14.5px;
+  color:var(--text);
+}
+.recap-hub svg{color:var(--accent);flex:none;}
+.recap-nodes{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  width:100%;
+}
+@media (max-width:560px){
+  .recap-nodes{grid-template-columns:1fr;}
+}
+.recap-node{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
   background:var(--surface);
   border:1px solid var(--border);
   border-radius:14px;
-  padding:14px 16px;
+  padding:16px 14px 12px;
 }
-.recap ol{margin:0;padding-left:18px;}
-.recap li{font-size:13px;margin-bottom:6px;}
-.recap li:last-child{margin-bottom:0;}
+.recap-node svg{color:var(--accent);}
+.recap-num{
+  position:absolute;
+  top:-9px;
+  left:-9px;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:var(--accent);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'JetBrains Mono',monospace;
+  font-weight:600;
+  font-size:11.5px;
+  border:2px solid var(--bg);
+}
+.recap-node p{margin:0;font-size:13px;color:var(--text);}
+.recap-nodes .recap-node:nth-child(5){grid-column:1 / -1;}
 .progress{
   display:flex;
   gap:6px;
