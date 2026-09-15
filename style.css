@@ -371,35 +371,6 @@ p{margin:0 0 10px;font-size:14px;}
   margin-bottom:12px;
 }
 .callout p{font-size:13.5px;}
-.checklist{
-  list-style:none;
-  margin:10px 0 0;
-  padding:0;
-  display:grid;
-  gap:7px;
-}
-.checklist li{
-  display:flex;
-  gap:9px;
-  align-items:flex-start;
-  font-size:13px;
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:11px;
-  padding:8px 12px;
-  cursor:pointer;
-  transition:background 0.15s ease, border-color 0.15s ease;
-}
-.checklist li:hover{border-color:#CBD5FF;}
-.checklist li.done{
-  background:#F0F3FF;
-  border-color:#CBD5FF;
-  color:var(--muted);
-  text-decoration:line-through;
-  text-decoration-color:#AEB8E0;
-}
-.checklist li.done svg{stroke:var(--accent);}
-.checklist svg{flex:none;margin-top:2px;}
 /* Quick-recap mind map — hub + 5 nodes, in the page's own blue/white palette */
 .recap-map{
   display:flex;
@@ -460,6 +431,40 @@ p{margin:0 0 10px;font-size:14px;}
 }
 .recap-node p{margin:0;font-size:13px;color:var(--text);}
 .recap-nodes .recap-node:nth-child(5){grid-column:1 / -1;}
+
+/* Accent-color set for the step-flow and recap-map cards */
+.recap-node.c1{background:#EEF3FF;border-color:#C7D4FB;}
+.recap-node.c1 svg{color:#3557D1;}
+.recap-node.c1 .recap-num{background:#3557D1;}
+.recap-node.c2{background:#EAF9EF;border-color:#BFE8CC;}
+.recap-node.c2 svg{color:#1F9D55;}
+.recap-node.c2 .recap-num{background:#1F9D55;}
+.recap-node.c3{background:#FDEFF1;border-color:#F6C9D0;}
+.recap-node.c3 svg{color:#D6455A;}
+.recap-node.c3 .recap-num{background:#D6455A;}
+.recap-node.c4{background:#F3EEFC;border-color:#D8C7F5;}
+.recap-node.c4 svg{color:#7C4FD1;}
+.recap-node.c4 .recap-num{background:#7C4FD1;}
+.recap-node.c5{background:#FFF6E9;border-color:#F7DDAE;}
+.recap-node.c5 svg{color:#C9770E;}
+.recap-node.c5 .recap-num{background:#C9770E;}
+
+/* Vertical step flow — same card style as the recap map, chained with arrows */
+.step-flow{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:2px;
+  margin:10px 0 4px;
+}
+.step-flow .recap-node{
+  width:100%;
+  max-width:440px;
+}
+.step-arrow{
+  color:var(--border);
+  flex:none;
+}
 .progress{
   display:flex;
   gap:6px;
