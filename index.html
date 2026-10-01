@@ -2,399 +2,346 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Framing and the Five Refinement Moves</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="app">
 
-  <header>
-    <div class="eyebrow">
-      <span class="mono schema">AAI-E-MC1-S02-READ01</span>
-      <span class="badge">Reading Material</span>
-      <span class="badge">0.75 hrs</span>
-      <span class="badge">Theory</span>
+  <div class="saa-header">
+    <div class="saa-brand">
+      <img src="assets/logo-mark.png" alt="">
+      <span>SWIFT&nbsp;AI&nbsp;ACADEMY</span>
     </div>
-    <h1>Framing and the Five Refinement Moves</h1>
-    <p class="subtitle">Learn to ask AI clearly, and check its answer before you use it.</p>
-  </header>
-
-  <div class="progress" aria-hidden="true">
-    <span class="progress-dot active" data-dot="1"></span>
-    <span class="progress-dot" data-dot="2"></span>
-    <span class="progress-dot" data-dot="3"></span>
-    <span class="progress-dot" data-dot="4"></span>
-    <span class="progress-dot" data-dot="5"></span>
-    <span class="progress-dot" data-dot="6"></span>
+    <div class="saa-header-actions">
+      <button type="button" class="saa-icon-btn" aria-label="Course outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+      </button>
+      <button type="button" class="saa-ghost-pill" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        Close
+      </button>
+    </div>
   </div>
 
-  <!-- PAGE 1 — CRTF overview -->
-  <div id="page-1" class="page">
+  <main class="reading-card saa-card">
 
-    <section>
-      <h2>1. Tell AI what you need</h2>
+  <!-- Slide 1 — title -->
+  <section class="page page-intro">
+    <header>
+      <div class="saa-eyebrow">Reading Material &middot; 0.75 hrs &middot; Theory</div>
+      <h1>Framing and the Five Refinement Moves</h1>
+      <p class="subtitle">Learn to ask AI clearly, and check its answer before you use it.</p>
+      <span class="schema">AAI-E-MC1-S02-READ01</span>
+    </header>
+  </section>
 
-      <div class="step-flow">
-        <div class="recap-node c1">
-          <span class="recap-num">1</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-          <p>You ask AI for help.</p>
-        </div>
-        <svg class="step-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
-        <div class="recap-node c5">
-          <span class="recap-num">2</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2 2-2 3.5"></path><line x1="12" y1="16.5" x2="12.01" y2="16.5"></line></svg>
-          <p>Miss a detail? AI has to guess.</p>
-        </div>
-        <svg class="step-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
-        <div class="recap-node c2">
-          <span class="recap-num">3</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
-          <p>A guess can be wrong. Always check first.</p>
-        </div>
+  <!-- Slide 2 — (old page 1, part 1) why detail matters -->
+  <section class="page" hidden>
+    <h2>1. Tell AI what you need</h2>
+    <div class="step-flow">
+      <div class="recap-node c1">
+        <span class="recap-num">1</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        <p>You ask AI for help.</p>
       </div>
-
-      <p class="hint" style="text-align:center;margin:14px 0 8px;">These are the 4 things to give it:</p>
-      <div class="flow">
-        <div class="flow-step">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-          Context
-        </div>
-        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        <div class="flow-step">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg>
-          Role
-        </div>
-        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        <div class="flow-step">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-          Task
-        </div>
-        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        <div class="flow-step">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          Format
-        </div>
+      <svg class="step-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      <div class="recap-node c5">
+        <span class="recap-num">2</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2 2-2 3.5"></path><line x1="12" y1="16.5" x2="12.01" y2="16.5"></line></svg>
+        <p>Miss a detail? AI has to guess.</p>
       </div>
-      <p class="hint" style="text-align:center;margin-top:2px;">Next: see this with a real example.</p>
-    </section>
-
-    <div class="page-nav">
-      <button type="button" class="btn-next" data-target="1">
-        Next
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </button>
-    </div>
-
-  </div>
-
-  <!-- PAGE 2 — weak vs usable request + try it yourself -->
-  <div id="page-2" class="page" hidden>
-
-    <div class="page-nav page-nav-start">
-      <button type="button" class="btn-back" data-target="0">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Back
-      </button>
-    </div>
-
-    <section>
-      <h2>2. Try two prompts</h2>
-      <p>Same job, two different asks. See the difference.</p>
-
-      <div class="example-grid">
-        <div class="example-card weak">
-          <div class="example-tag weak-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-            Prompt 1
-          </div>
-          <p>&ldquo;Write about road safety.&rdquo;</p>
-        </div>
-        <div class="example-card usable">
-          <div class="example-tag usable-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Prompt 2
-          </div>
-          <p>&ldquo;You are a teacher. Write a short notice for students about crossing the road safely near school. Make it 3 short points for the notice board.&rdquo;</p>
-        </div>
+      <svg class="step-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      <div class="recap-node c2">
+        <span class="recap-num">3</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+        <p>A guess can be wrong. Always check first.</p>
       </div>
+    </div>
+  </section>
 
-      <div class="practice-box">
-        <p class="practice-label">Try it yourself</p>
-        <p>Open your AI tool. Try both prompts above. Paste each answer below.</p>
-
-        <label for="out-1">Answer from Prompt 1</label>
-        <textarea id="out-1" rows="3" placeholder="Paste the AI's answer here"></textarea>
-
-        <label for="out-2">Answer from Prompt 2</label>
-        <textarea id="out-2" rows="3" placeholder="Paste the AI's answer here"></textarea>
-
-        <p class="mcq-question">Which answer do you like more?</p>
-        <div class="mcq-group">
-          <div class="mcq-options">
-            <button type="button" class="mcq-option" data-feedback="Prompt 1's answer is often too general &mdash; the AI had to guess who it's for.">Prompt 1</button>
-            <button type="button" class="mcq-option" data-feedback="Prompt 2 usually works better &mdash; it tells the AI who it's for, what to write, and how it should look.">Prompt 2</button>
-          </div>
-          <p class="mcq-feedback" hidden></p>
-        </div>
+  <!-- Slide 3 — (old page 1, part 2) the 4 things -->
+  <section class="page" hidden>
+    <h2>Give it 4 things</h2>
+    <p class="hint hint-center">These are the 4 things to give it:</p>
+    <div class="flow">
+      <div class="flow-step">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        Context
       </div>
-    </section>
-
-    <div class="page-nav">
-      <button type="button" class="btn-next" data-target="2">
-        Next
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </button>
-    </div>
-
-  </div>
-
-  <!-- PAGE 3 — the four elements (accordion) -->
-  <div id="page-3" class="page" hidden>
-
-    <div class="page-nav page-nav-start">
-      <button type="button" class="btn-back" data-target="1">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Back
-      </button>
-    </div>
-
-    <section>
-      <h2>3. What each word means</h2>
-      <div class="term-list">
-        <div class="term-row">
-          <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span>
-          <span><strong>Context</strong> &mdash; why you need this, and who will read it.</span>
-        </div>
-        <div class="term-row">
-          <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg></span>
-          <span><strong>Role</strong> &mdash; who the AI should act like.</span>
-        </div>
-        <div class="term-row">
-          <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
-          <span><strong>Task</strong> &mdash; what you want the AI to make.</span>
-        </div>
-        <div class="term-row">
-          <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
-          <span><strong>Format</strong> &mdash; how it should look when it's done.</span>
-        </div>
+      <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      <div class="flow-step">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg>
+        Role
       </div>
-    </section>
-
-    <div class="page-nav">
-      <button type="button" class="btn-next" data-target="3">
-        Next
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </button>
-    </div>
-
-  </div>
-
-  <!-- PAGE 4 — five refinement moves -->
-  <div id="page-4" class="page" hidden>
-
-    <div class="page-nav page-nav-start">
-      <button type="button" class="btn-back" data-target="2">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Back
-      </button>
-    </div>
-
-    <section>
-      <h2>4. 5 ways to fix an answer</h2>
-      <p>The first answer is not always right. Use one of these 5 tricks to fix it.</p>
-
-      <div class="flow">
-        <div class="flow-step">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-          Answer
-        </div>
-        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        <div class="flow-step accent">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
-          Pick a trick
-        </div>
-        <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        <div class="flow-step">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-          Better answer
-        </div>
+      <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      <div class="flow-step">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+        Task
       </div>
-
-      <p class="hint">Tap to learn each one.</p>
-      <div class="accordion" data-accordion>
-        <div class="acc-item">
-          <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">1</span> Make it smaller</span>
-            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="acc-body"><div class="acc-body-inner">
-            <p>Answer covers too much? Ask for just one part.</p>
-            <span class="trigger">&ldquo;Only tell me about ___.&rdquo;</span>
-          </div></div>
-        </div>
-        <div class="acc-item">
-          <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">2</span> Add more</span>
-            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="acc-body"><div class="acc-body-inner">
-            <p>Answer too short? Ask for more detail.</p>
-            <span class="trigger">&ldquo;Tell me more about ___.&rdquo;</span>
-          </div></div>
-        </div>
-        <div class="acc-item">
-          <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">3</span> Change the tone</span>
-            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="acc-body"><div class="acc-body-inner">
-            <p>Words too hard, or too simple? Ask AI to change how it sounds.</p>
-            <span class="trigger">&ldquo;Say this in a simple way for ___.&rdquo;</span>
-          </div></div>
-        </div>
-        <div class="acc-item">
-          <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">4</span> Check it</span>
-            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="acc-body"><div class="acc-body-inner">
-            <p>Answer sounds sure, but might be wrong? Ask AI to check itself.</p>
-            <span class="trigger">&ldquo;What might be wrong here?&rdquo;</span>
-          </div></div>
-        </div>
-        <div class="acc-item">
-          <button type="button" class="acc-header" aria-expanded="false">
-            <span class="acc-title"><span class="acc-num">5</span> Combine</span>
-            <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="acc-body"><div class="acc-body-inner">
-            <p>Got 2 good answers? Ask AI to combine the best parts.</p>
-            <span class="trigger">&ldquo;Combine the best parts of both.&rdquo;</span>
-          </div></div>
-        </div>
+      <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      <div class="flow-step">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        Format
       </div>
+    </div>
+    <p class="hint hint-center">Next: see this with a real example.</p>
+  </section>
 
-      <div class="stop-rule">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A6B00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-        <div>
-          <span class="label">When to stop</span>
-          <p>If fixing it yourself is faster than asking again &mdash; just fix it.</p>
+  <!-- Slide 4 — (old page 2, part 1) two prompts -->
+  <section class="page" hidden>
+    <h2>2. Try two prompts</h2>
+    <p>Same job, two different asks. See the difference.</p>
+    <div class="example-grid">
+      <div class="example-card weak">
+        <div class="example-tag weak-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          Prompt 1
         </div>
+        <p>&ldquo;Write about road safety.&rdquo;</p>
       </div>
-    </section>
-
-    <div class="page-nav">
-      <button type="button" class="btn-next" data-target="4">
-        Next
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </button>
-    </div>
-
-  </div>
-
-  <!-- PAGE 5 — practice -->
-  <div id="page-5" class="page" hidden>
-
-    <div class="page-nav page-nav-start">
-      <button type="button" class="btn-back" data-target="3">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Back
-      </button>
-    </div>
-
-    <section>
-      <h2>5. Practice</h2>
-      <div class="callout">
-        <p style="margin:0;">Pretend: you are the class leader. Your group has homework due Friday (just for practice). Write one message. Tell the AI all 4 things &mdash; context, role, task, format.</p>
-      </div>
-
-      <div class="practice-box">
-        <p class="practice-label">Your turn</p>
-
-        <label for="practice-message">Your message</label>
-        <textarea id="practice-message" rows="3" placeholder="You are ... Write ... for ... Format it as ..."></textarea>
-
-        <p class="hint" style="margin:8px 0 0;">Now ask the AI: &ldquo;What might you be wrong about?&rdquo;</p>
-        <p class="mcq-question">Did it find something it wasn't sure about?</p>
-        <div class="mcq-group">
-          <div class="mcq-options">
-            <button type="button" class="mcq-option" data-feedback="That's exactly why we check. Always confirm anything the AI wasn't sure about.">Yes</button>
-            <button type="button" class="mcq-option" data-feedback="That's fine too &mdash; keep checking anyway. AI can be wrong without saying so.">No</button>
-          </div>
-          <p class="mcq-feedback" hidden></p>
+      <div class="example-card usable">
+        <div class="example-tag usable-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Prompt 2
         </div>
+        <p>&ldquo;You are a teacher. Write a short notice for students about crossing the road safely near school. Make it 3 short points for the notice board.&rdquo;</p>
       </div>
-    </section>
-
-    <div class="page-nav">
-      <button type="button" class="btn-next" data-target="5">
-        Next
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </button>
     </div>
+  </section>
 
-  </div>
-
-  <!-- PAGE 6 — check before use + recap -->
-  <div id="page-6" class="page" hidden>
-
-    <div class="page-nav page-nav-start">
-      <button type="button" class="btn-back" data-target="4">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Back
-      </button>
+  <!-- Slide 5 — (old page 2, part 2) paste both answers -->
+  <section class="page" hidden>
+    <h2>Try it yourself</h2>
+    <p class="lead-sm">Open your AI tool. Try both prompts above. Paste each answer below.</p>
+    <div class="practice-box">
+      <label for="out-1">Answer from Prompt 1</label>
+      <textarea id="out-1" rows="3" placeholder="Paste the AI's answer here"></textarea>
+      <label for="out-2">Answer from Prompt 2</label>
+      <textarea id="out-2" rows="3" placeholder="Paste the AI's answer here"></textarea>
     </div>
+  </section>
 
-    <section style="margin-bottom:8px;">
-      <h2>6. Quick recap</h2>
-      <div class="recap-map">
-        <div class="recap-hub">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2a3.5 3.5 0 0 0-3.5 3.5V6a3 3 0 0 0-1.5 5.5A3 3 0 0 0 6 17h.5A3.5 3.5 0 0 0 10 20.5V21"></path><path d="M14.5 2A3.5 3.5 0 0 1 18 5.5V6a3 3 0 0 1 1.5 5.5A3 3 0 0 1 18 17h-.5a3.5 3.5 0 0 1-3.5 3.5V21"></path><line x1="12" y1="3" x2="12" y2="21"></line></svg>
-          <span>Quick recap</span>
-        </div>
-        <div class="recap-nodes">
-          <div class="recap-node c1">
-            <span class="recap-num">1</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
-            <p>Tell AI 4 things before you ask.</p>
-          </div>
-          <div class="recap-node c4">
-            <span class="recap-num">2</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="4 12 8 8"></polyline><polyline points="4 12 8 16"></polyline><polyline points="20 12 16 8"></polyline><polyline points="20 12 16 16"></polyline></svg>
-            <p>Too much? Ask for less. Too little? Ask for more.</p>
-          </div>
-          <div class="recap-node c5">
-            <span class="recap-num">3</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
-            <p>Wrong tone? Ask AI to change it. Not sure? Ask AI to check itself.</p>
-          </div>
-          <div class="recap-node c2">
-            <span class="recap-num">4</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-            <p>Two good answers? Combine them.</p>
-          </div>
-          <div class="recap-node c3">
-            <span class="recap-num">5</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <p>Faster to fix it yourself? Stop &mdash; and always check before you use it.</p>
-          </div>
-        </div>
+  <!-- Slide 6 — (old page 2, part 3) MCQ -->
+  <section class="page" hidden>
+    <h2 class="mcq-question">Which answer do you like more?</h2>
+    <div class="mcq-group">
+      <div class="mcq-options">
+        <button type="button" class="mcq-option" data-feedback="Prompt 1's answer is often too general &mdash; the AI had to guess who it's for.">Prompt 1</button>
+        <button type="button" class="mcq-option" data-feedback="Prompt 2 usually works better &mdash; it tells the AI who it's for, what to write, and how it should look.">Prompt 2</button>
       </div>
-    </section>
-
-    <div class="page-nav">
-      <button type="button" class="btn-back" data-target="0">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
-        Start over
-      </button>
+      <p class="mcq-feedback" hidden></p>
     </div>
+  </section>
 
-  </div>
+  <!-- Slide 7 — (old page 3) the four elements -->
+  <section class="page" hidden>
+    <h2>3. What each word means</h2>
+    <div class="term-list">
+      <div class="term-row">
+        <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span>
+        <span><strong>Context</strong> &mdash; why you need this, and who will read it.</span>
+      </div>
+      <div class="term-row">
+        <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg></span>
+        <span><strong>Role</strong> &mdash; who the AI should act like.</span>
+      </div>
+      <div class="term-row">
+        <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+        <span><strong>Task</strong> &mdash; what you want the AI to make.</span>
+      </div>
+      <div class="term-row">
+        <span class="term-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+        <span><strong>Format</strong> &mdash; how it should look when it's done.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 8 — (old page 4, part 1) the fix loop -->
+  <section class="page" hidden>
+    <h2>4. 5 ways to fix an answer</h2>
+    <p>The first answer is not always right. Use one of these 5 tricks to fix it.</p>
+    <div class="flow">
+      <div class="flow-step">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        Answer
+      </div>
+      <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      <div class="flow-step accent">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
+        Pick a trick
+      </div>
+      <svg class="flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      <div class="flow-step">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        Better answer
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 9 — (old page 4, part 2) tricks 1–3 -->
+  <section class="page" hidden>
+    <h2>Fix tricks 1&ndash;3</h2>
+    <p class="hint">Tap to learn each one.</p>
+    <div class="accordion" data-accordion>
+      <div class="acc-item">
+        <button type="button" class="acc-header" aria-expanded="false">
+          <span class="acc-title"><span class="acc-num">1</span> Make it smaller</span>
+          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="acc-body"><div class="acc-body-inner">
+          <p>Answer covers too much? Ask for just one part.</p>
+          <span class="trigger">&ldquo;Only tell me about ___.&rdquo;</span>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button type="button" class="acc-header" aria-expanded="false">
+          <span class="acc-title"><span class="acc-num">2</span> Add more</span>
+          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="acc-body"><div class="acc-body-inner">
+          <p>Answer too short? Ask for more detail.</p>
+          <span class="trigger">&ldquo;Tell me more about ___.&rdquo;</span>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button type="button" class="acc-header" aria-expanded="false">
+          <span class="acc-title"><span class="acc-num">3</span> Change the tone</span>
+          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="acc-body"><div class="acc-body-inner">
+          <p>Words too hard, or too simple? Ask AI to change how it sounds.</p>
+          <span class="trigger">&ldquo;Say this in a simple way for ___.&rdquo;</span>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 10 — (old page 4, part 3) tricks 4–5 + when to stop -->
+  <section class="page" hidden>
+    <h2>Fix tricks 4&ndash;5</h2>
+    <div class="accordion" data-accordion>
+      <div class="acc-item">
+        <button type="button" class="acc-header" aria-expanded="false">
+          <span class="acc-title"><span class="acc-num">4</span> Check it</span>
+          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="acc-body"><div class="acc-body-inner">
+          <p>Answer sounds sure, but might be wrong? Ask AI to check itself.</p>
+          <span class="trigger">&ldquo;What might be wrong here?&rdquo;</span>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button type="button" class="acc-header" aria-expanded="false">
+          <span class="acc-title"><span class="acc-num">5</span> Combine</span>
+          <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="acc-body"><div class="acc-body-inner">
+          <p>Got 2 good answers? Ask AI to combine the best parts.</p>
+          <span class="trigger">&ldquo;Combine the best parts of both.&rdquo;</span>
+        </div></div>
+      </div>
+    </div>
+    <div class="stop-rule">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+      <div>
+        <span class="label">When to stop</span>
+        <p>If fixing it yourself is faster than asking again &mdash; just fix it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 11 — (old page 5, part 1) write the message -->
+  <section class="page" hidden>
+    <h2>5. Practice</h2>
+    <div class="callout">
+      <p>Pretend: you are the class leader. Your group has homework due Friday (just for practice). Write one message. Tell the AI all 4 things &mdash; context, role, task, format.</p>
+    </div>
+    <div class="practice-box">
+      <p class="practice-label">Your turn</p>
+      <label for="practice-message">Your message</label>
+      <textarea id="practice-message" rows="3" placeholder="You are ... Write ... for ... Format it as ..."></textarea>
+    </div>
+  </section>
+
+  <!-- Slide 12 — (old page 5, part 2) MCQ -->
+  <section class="page" hidden>
+    <h2>Check the answer</h2>
+    <p class="hint hint-ask">Now ask the AI: &ldquo;What might you be wrong about?&rdquo;</p>
+    <p class="mcq-question">Did it find something it wasn't sure about?</p>
+    <div class="mcq-group">
+      <div class="mcq-options">
+        <button type="button" class="mcq-option" data-feedback="That's exactly why we check. Always confirm anything the AI wasn't sure about.">Yes</button>
+        <button type="button" class="mcq-option" data-feedback="That's fine too &mdash; keep checking anyway. AI can be wrong without saying so.">No</button>
+      </div>
+      <p class="mcq-feedback" hidden></p>
+    </div>
+  </section>
+
+  <!-- Slide 13 — (old page 6, part 1) recap 1–3 -->
+  <section class="page" hidden>
+    <h2>6. Quick recap</h2>
+    <div class="recap-nodes">
+      <div class="recap-node c1">
+        <span class="recap-num">1</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+        <p>Tell AI 4 things before you ask.</p>
+      </div>
+      <div class="recap-node c4">
+        <span class="recap-num">2</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="4 12 8 8"></polyline><polyline points="4 12 8 16"></polyline><polyline points="20 12 16 8"></polyline><polyline points="20 12 16 16"></polyline></svg>
+        <p>Too much? Ask for less. Too little? Ask for more.</p>
+      </div>
+      <div class="recap-node c5">
+        <span class="recap-num">3</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
+        <p>Wrong tone? Ask AI to change it. Not sure? Ask AI to check itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 14 — (old page 6, part 2) recap 4–5 -->
+  <section class="page" hidden>
+    <h2>Quick recap, continued</h2>
+    <div class="recap-nodes">
+      <div class="recap-node c2">
+        <span class="recap-num">4</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        <p>Two good answers? Combine them.</p>
+      </div>
+      <div class="recap-node c3">
+        <span class="recap-num">5</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        <p>Faster to fix it yourself? Stop &mdash; and always check before you use it.</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- footer: Back · progress · Next -->
+  <footer class="deck-foot">
+    <button type="button" class="btn-back saa-btn-secondary" id="deck-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back
+    </button>
+    <div class="deck-progress">
+      <div class="progress" id="deck-dots" aria-hidden="true"></div>
+      <span class="deck-count" id="deck-count" aria-live="polite">1 / 14</span>
+    </div>
+    <button type="button" class="btn-next saa-btn-primary" id="deck-next">
+      Next
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </button>
+    <button type="button" class="btn-restart saa-btn-secondary" id="deck-restart" hidden>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
+      Start over
+    </button>
+  </footer>
 
 </div>
 <script src="script.js"></script>

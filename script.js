@@ -1,28 +1,51 @@
-// Six-screen pagination: any button with data-target swaps which .page is
-// visible and updates the progress dots. Purely visual, in-memory state only.
+// Slide deck: every .page is one slide (14 in total). The footer Back / Next
+// buttons move between slides and the progress bars + "n / 14" counter are
+// built from the slide count, so nothing is hard-coded. In-memory state only.
 document.addEventListener('DOMContentLoaded', function () {
-  var pages = document.querySelectorAll('.page');
-  var dots = document.querySelectorAll('.progress-dot');
+  var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
+  var backBtn = document.getElementById('deck-back');
+  var nextBtn = document.getElementById('deck-next');
+  var restartBtn = document.getElementById('deck-restart');
+  var dotsWrap = document.getElementById('deck-dots');
+  var count = document.getElementById('deck-count');
+  var total = pages.length;
+  var current = 0;
+
+  pages.forEach(function () {
+    var dot = document.createElement('span');
+    dot.className = 'progress-dot';
+    dotsWrap.appendChild(dot);
+  });
+  var dots = dotsWrap.querySelectorAll('.progress-dot');
 
   function showPage(index) {
+    current = Math.max(0, Math.min(total - 1, index));
     pages.forEach(function (page, i) {
-      page.hidden = i !== index;
+      page.hidden = i !== current;
     });
     dots.forEach(function (dot, i) {
-      dot.classList.toggle('active', i === index);
+      dot.classList.toggle('done', i < current);
+      dot.classList.toggle('active', i === current);
     });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    count.textContent = (current + 1) + ' / ' + total;
+
+    backBtn.classList.toggle('is-hidden', current === 0);
+    backBtn.disabled = current === 0;
+    // Last slide: "Start over" (secondary) replaces Next, as on the old recap page.
+    var last = current === total - 1;
+    nextBtn.hidden = last;
+    restartBtn.hidden = !last;
   }
 
-  document.querySelectorAll('[data-target]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      showPage(parseInt(btn.getAttribute('data-target'), 10));
-    });
-  });
+  backBtn.addEventListener('click', function () { showPage(current - 1); });
+  nextBtn.addEventListener('click', function () { showPage(current + 1); });
+  restartBtn.addEventListener('click', function () { showPage(0); });
+
+  showPage(0);
 });
 
-// CRTF terms and five-moves accordions: tap a header to reveal its
-// description. Only one item per accordion stays open at a time.
+// Five-moves accordions: tap a header to reveal its description.
+// Only one item per accordion stays open at a time.
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('[data-accordion]').forEach(function (accordion) {
     var items = accordion.querySelectorAll('.acc-item');
@@ -43,12 +66,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Quick MCQs: tap an option to select it and reveal one line of feedback.
-// Purely visual, in-memory state only — nothing is saved or sent anywhere.
+// Quick MCQs (one per slide): tap an option to select it and reveal one line
+// of feedback in the space reserved for it. In-memory state only.
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.mcq-group').forEach(function (group) {
     var options = group.querySelectorAll('.mcq-option');
     var feedback = group.querySelector('.mcq-feedback');
+    feedback.setAttribute('aria-live', 'polite');
     options.forEach(function (option) {
       option.addEventListener('click', function () {
         options.forEach(function (o) { o.classList.remove('selected'); });
